@@ -1,0 +1,20 @@
+function openNav() {
+  document.getElementById("side-nav").style.width = "250px";
+  document.getElementById("side-nav-open").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "#000000";
+}
+function closeNav() {
+  document.getElementById("side-nav").style.width = "0";
+  document.getElementById("side-nav-open").style.marginLeft = "0";
+  document.body.style.backgroundColor = "white";
+} 
+function openSearch() {
+  document.getElementById("side-search").style.width = "250px";
+  document.getElementById("side-search-open").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "#000000";
+}
+function closeSearch() {
+  document.getElementById("side-search").style.width = "0";
+  document.getElementById("side-search-open").style.marginLeft = "0";
+  document.body.style.backgroundColor = "white";
+} 
