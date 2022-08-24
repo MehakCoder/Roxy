@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Work Sans', sans-serif;
+    margin-top: 0;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+nav .fa {
+    font-size: 16px;
+}
+
+.fa {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+a {
+    color: #ff00cc;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #333399;
+}
+
+.text-pink,
+.font-color {
+    color: #ff00cc;
+}
+
+.Feature,
+.Factor-section,
+.Testimonial,
+.Portfolio,
+.client-slider,
+.Contact-us,
+.New-project {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.shadow {
+    box-shadow: 0 10px 30px 0 rgb(67 80 98 / 24%), 0 2px 4px 0 rgb(67 80 98 / 10%) !important;
+}
+
+.btn {
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 30px;
+    padding: 9px 25px;
+    text-transform: capitalize;
+    transition: all 0.3s ease 0s;
+}
+
+.btn-primary {
+    background-color: transparent;
+    background-image: none;
+    border-color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #333399 !important;
+    background-image: none;
+    border-color: #333399 !important;
+}
+ .btn-primary:focus{
+    background-color: transparent;
+    border-color: #0a58ca;
+    box-shadow: 0 0 0 0.25rem rgb(49 132 253 / 50%);
+}
+/* Header-navbar */
+
+
+
+
+
+
+
+
+
+/* Header-navbar */
+/* Feature */
+.features-holder {
+    transition: all .2s ease-in-out 0s !important;
+}
+
+/* Feature:the end */
+/* Factor */
+.Factor {
+    position: relative;
+    background-image: url(../Image/bg.jpg);
+    background-position: 0% 3.56562px;;
+    background-size: cover;
+    color: #fff;
+    margin-bottom: 80px;
+}
+
+.Factor:before {
+    position: absolute;
+    display: block;
+    content: "";
+    opacity: 0.8;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, #333399, #ff00cc);
+}
+#section-contain{
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    z-index: 2;
+}
+/* Factor : the end */
+/* Factor-section */
+.progress-bar{
+    background-color: #ff00cc;
+}
+/* Factor-section : the end */
+/*  Testimonials: Start */
+.Testimonial{
+    position: relative;
+    background-image: url(../Image/bg-white.jpg);
+    background-position: 0% 14.0344px;
+    background-size: cover;
+    
+}
+.bg-white{
+    color: #000;
+}
+.Testimonial:before{
+    position: absolute;
+    display: block;
+    content: "";
+    opacity: 0.7;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+}
+.section-heading{
+    position: relative;
+    z-index: 2; 
+}
+
+/* Testimonials : the end */
