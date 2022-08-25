@@ -34,3 +34,16 @@ $('.owl-carousel').owlCarousel({
       }
   }
 })
+$(".Portfolio-filters a").on('click', function () {
+
+  $(".Portfolio-filters a").removeClass("active");
+  $(this).addClass("active");
+
+  var selector = $(this).attr('data-filter');
+
+  $(".product-lists").isotope({
+      filter: selector,
+  });
+
+});
+  

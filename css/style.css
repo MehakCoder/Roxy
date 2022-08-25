@@ -57,6 +57,10 @@ a:hover {
     padding-top: 80px;
     padding-bottom: 80px;
 }
+img{
+    width: 100%;
+    height: auto;
+}
 
 .shadow {
     box-shadow: 0 10px 30px 0 rgb(67 80 98 / 24%), 0 2px 4px 0 rgb(67 80 98 / 10%) !important;
@@ -181,3 +185,27 @@ a:hover {
     margin-right: 6px;
 }
 /* Testimonials : the end */
+/* Portfolio */
+.Portfolio-filters a{
+    margin: 5px;
+    cursor: pointer;
+}
+.product-lists{
+    margin: 16px;
+    column-count: 3;
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Portfolio */
