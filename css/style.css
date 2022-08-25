@@ -162,6 +162,22 @@ a:hover {
 .section-heading{
     position: relative;
     z-index: 2; 
+    margin-bottom: 80px;
 }
-
+.test-item .fa{
+    font-size: 50px;
+    font-weight: 900;
+    padding-bottom: 50px;
+}
+.testi-text {
+    font-weight: 300;
+    padding-bottom: 50px;
+}
+.testi-img img {
+    height: 60px;
+    width: 60px !important;
+    border-radius: 50%;
+    display: inline-block !important;
+    margin-right: 6px;
+}
 /* Testimonials : the end */

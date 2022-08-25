@@ -48,14 +48,13 @@
       width: 15px;
       height: 15px;
       margin: 5px 3px;
-      border: 50%;
-      background: #D6D6D6;
+      border-radius: 50%;
+      background-color: rgba(255, 0, 204, 0.3);
       display: block;
       -webkit-backface-visibility: visible;
       transition: opacity 200ms ease;
        }
     .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-      color: #fff;
-    background-color: #212121;
-    border-color: #212121;
+      background-color: transparent;
+       box-shadow: 0 0 0 2px #ff00cc;
   }
