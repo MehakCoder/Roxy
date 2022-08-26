@@ -27,7 +27,7 @@ nav .fa {
 }
 
 .fa {
-    font-size: 40px;
+    font-size: 40px !important;
     font-weight: 500;
 }
 
@@ -37,7 +37,7 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+a:hover{
     text-decoration: none;
     color: #333399;
 }
@@ -46,7 +46,15 @@ a:hover {
 .font-color {
     color: #ff00cc;
 }
-
+span{
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: underline;
+    display: block;
+}
+span:hover{
+    text-decoration: none;
+}
 .Feature,
 .Factor-section,
 .Testimonial,
@@ -82,7 +90,7 @@ img{
     border-color: #fff;
 }
 
-.btn-primary:hover {
+.btn-primary:hover,.btn-pink:hover {
     background-color: #333399 !important;
     background-image: none;
     border-color: #333399 !important;
@@ -91,6 +99,17 @@ img{
     background-color: transparent;
     border-color: #0a58ca;
     box-shadow: 0 0 0 0.25rem rgb(49 132 253 / 50%);
+}
+.btn-pink{
+    font-size: 14px;
+    display: inline-block;
+    background-color: #ff00cc;
+    border-color: #ff00cc;
+    box-shadow: -5px 8px 20px 0px rgb(229 16 2 / 15%);
+}
+.form-control:focus {
+    border-color: #ff00cc;
+    box-shadow: 0 0 0 0.2rem rgb(253 101 90 / 25%);
 }
 /* Header-navbar */
 
@@ -187,6 +206,17 @@ img{
 }
 /* Testimonials : the end */
 /* Portfolio */
+.single-product-item{
+    position: relative;
+    height: 887.36px;
+    overflow: hidden;
+}
+.product-info{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .Portfolio-filters a{
     margin: 5px;
     cursor: pointer;
@@ -199,25 +229,26 @@ img{
 /* Portfolio */
 
 /* client-slider */
-.Client-slider{
-    position: relative;
-    background-image: url(../Image/bg.jpg);
-    background-position: 0% -57.9125px;
-    background-size: cover;
+ .Client-slider{
+    background-position: 0% -58.9125px;
 }
-.Client-slider:after{
-    position: absolute;
-    display: block;
-    content: "";
-    opacity: 0.8;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(to right, #333399, #ff00cc);
-}
+
 .Client-holder .item{
     padding: 0 40px;
 }
-
+span .fa{
+    font-size: 20px !important;
+    margin-top: 10px;
+}
 /* client-slider : the end */
+/* New Project */
+.New-project{
+    background-position: 0% -15.0937px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+nav span .fa{
+    font-size: 16px !important;
+    padding: 0.5rem 1rem;
+}
+/* New Project */
