@@ -18,7 +18,7 @@ function closeSearch() {
   document.getElementById("side-search-open").style.marginLeft = "0";
   document.body.style.backgroundColor = "white";
 } 
-$('.owl-carousel').owlCarousel({
+$('#Testimonial-slider').owlCarousel({
   loop:true,
   margin:10,
   nav:false,
@@ -46,4 +46,20 @@ $(".Portfolio-filters a").on('click', function () {
   });
 
 });
+$('.client-holder ').owlCarousel({
+  loop:true,
+  margin:10,
+  nav:true,
+  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:3
+      },
+      1000:{
+          items:6
+      }
+  }
+})
   

@@ -51,13 +51,14 @@ a:hover {
 .Factor-section,
 .Testimonial,
 .Portfolio,
-.client-slider,
+.Client-slider,
 .Contact-us,
 .New-project {
     padding-top: 80px;
     padding-bottom: 80px;
 }
 img{
+    display: block;
     width: 100%;
     height: auto;
 }
@@ -195,17 +196,28 @@ img{
     column-count: 3;
     display: flex;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Portfolio */
+
+/* client-slider */
+.Client-slider{
+    position: relative;
+    background-image: url(../Image/bg.jpg);
+    background-position: 0% -57.9125px;
+    background-size: cover;
+}
+.Client-slider:after{
+    position: absolute;
+    display: block;
+    content: "";
+    opacity: 0.8;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, #333399, #ff00cc);
+}
+.Client-holder .item{
+    padding: 0 40px;
+}
+
+/* client-slider : the end */
