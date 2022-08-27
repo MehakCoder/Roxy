@@ -206,7 +206,7 @@ img{
 }
 /* Testimonials : the end */
 /* Portfolio */
-.single-product-item{
+/* .single-product-item{
     position: relative;
     height: 887.36px;
     overflow: hidden;
@@ -215,7 +215,7 @@ img{
     position: absolute;
     top: 0;
     left: 0;
-}
+} */
 
 .Portfolio-filters a{
     margin: 5px;
