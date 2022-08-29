@@ -151,7 +151,6 @@ img {
 }
 
 .jumbotron {
-    color: #fff;
     padding-top: 80px;
     padding-bottom: 80px;
     background-repeat: no-repeat;
@@ -208,6 +207,7 @@ img {
     bottom: -10%;
     display: block;
 }
+
 .rectangle-transparent-2 {
     width: 600px;
     height: 600px;
