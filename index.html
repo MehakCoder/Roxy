@@ -23,33 +23,33 @@
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid ">
                     <a class="navbar-brand" href="#">
-                        <h3 class="font-weight-bolder mb-0">ROXY</h3>
+                        <h3 class="font-weight-bolder mb-0 text-white">ROXY</h3>
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
-                        <ul class="navbar-nav">
+                        <ul class="navbar-nav ">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-white" href="#">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
+                                <a class="nav-link text-white" href="#">Blog</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Blog</a>
+                                <a class="nav-link disabled text-white">content</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link disabled">content</a>
-                            </li>
-                            <li class="nav-item">
-                                <a id="side-search-open" class="nav-link" href="#">
+                                <a id="side-search-open" class="nav-link text-white" href="#">
                                     <span onclick="openSearch()"><i class="fa fa-search"></i></span>
                                 </a>
                             </li>
                             <li class="nav-item only-desktop">
-                                <a class="nav-link" id="side-nav-open" href="#">
+                                <a class="nav-link text-white" id="side-nav-open" href="#">
                                     <span onclick="openNav()"><i class="fa fa-bars"></i></span>
                                 </a>
                             </li>
@@ -88,28 +88,28 @@
                 </div>
             </div>
             <div class="jumbotron d-flex align-items-center">
-               <div class="container text-center">
-                <h1 class="display-1 mb-4">RO<br>XY</h1>
-               </div>  
-               <div class="rectangle-1"></div>
-               <div class="rectangle-2"></div>
-               <div class="rectangle-transparent-1"></div>
-               <div class="rectangle-transparent-2"></div>
-               <div class="circle-1"></div>
-               <div class="circle-2"></div>
-               <div class="circle-3"></div>
-               <div class="triangle triangle-1">
-                <img src="image/obj_triangle.png" alt="">
-               </div>
-               <div class="triangle triangle-2">
-                <img src="image/obj_triangle.png" alt="">
-               </div>
-               <div class="triangle triangle-3">
-                <img src="image/obj_triangle.png" alt="">
-               </div>
-               <div class="triangle triangle-4">
-                <img src="image/obj_triangle.png" alt="">
-               </div>
+                <div class="container text-center">
+                    <h1 class="display-1 mb-4 text-white">RO<br>XY</h1>
+                </div>
+                <div class="rectangle-1"></div>
+                <div class="rectangle-2"></div>
+                <div class="rectangle-transparent-1"></div>
+                <div class="rectangle-transparent-2"></div>
+                <div class="circle-1"></div>
+                <div class="circle-2"></div>
+                <div class="circle-3"></div>
+                <div class="triangle triangle-1">
+                    <img src="image/obj_triangle.png" alt="">
+                </div>
+                <div class="triangle triangle-2">
+                    <img src="image/obj_triangle.png" alt="">
+                </div>
+                <div class="triangle triangle-3">
+                    <img src="image/obj_triangle.png" alt="">
+                </div>
+                <div class="triangle triangle-4">
+                    <img src="image/obj_triangle.png" alt="">
+                </div>
             </div>
         </div>
     </div>
@@ -311,19 +311,20 @@
                             <br> pharetra augue. Donec id elit non mi.
                         </p>
                     </div>
-
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 portfolio-holder mt-3">
                     <div class="Portfolio-filters text-center">
                         <a class="active" data-filter="*">Show All</a>
                         <a data-filter=".Minimalism">Minimalism</a>
                         <a data-filter=".Vintage">Vintage</a>
                         <a data-filter=".Creative">Creative</a>
                     </div>
-                </div>
-                <div class="row product-lists">
-                    <div class="col-lg-4 col-md-6 text-center Minimalism">
-                        <div class="single-product-item">
-                            <img src="Image/photo-1.jpg" alt="portfolio-img" class="portfolio-item">
-                            <div class="product-info">
+                    <div class="row product-lists">
+                        <div class="single-product-item Minimalism">
+                            
+                                <img src="Image/photo-1.jpg" alt="portfolio-img" class="portfolio-item">
                                 <div class="product-link d-flex justify-content-center">
                                     <a class="img-pop" data-rel="lightcase" href="Image/photo-1.jpg" title="Photo-1">
                                         <span><i class="fa fa-arrows"></i></span>
@@ -336,13 +337,11 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
 
-                    <div class="col-lg-4 col-md-6 text-center Vintage">
-                        <div class="single-product-item">
-                            <img src="Image/photo-6.jpg" alt="portfolio-img" class="portfolio-item">
+                        </div>
+                        <div class="single-product-item Vintage">
                             <div class="product-info">
+                                <img src="Image/photo-6.jpg" alt="portfolio-img" class="portfolio-item">
                                 <div class="product-link d-flex justify-content-center">
                                     <a class="img-pop" data-rel="lightcase" href="Image/photo-6.jpg" title="Photo-1">
                                         <span><i class="fa fa-arrows"></i></span>
@@ -356,65 +355,57 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 text-center Creative">
-                        <div class="single-product-item">
-                            <img src="Image/photo-2.jpg" alt="portfolio-img" class="portfolio-item">
-                        </div>
-                        <div class="product-info">
-                            <div class="product-link d-flex justify-content-center">
-                                <a class="img-pop" data-rel="lightcase" href="Image/photo-2.jpg" title="Photo-1">
-                                    <span><i class="fa fa-arrows"></i></span>
-                                </a>
-                                <a class="ext-link" href="https://unsplash.com/" target="_blank">
-                                    <span><i class="fa fa-link"></i></span>
-                                </a>
-                                <div class="product-title">
-                                    <h4>Breakfast</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 text-center Vintage">
-                        <div class="single-product-item">
-                            <img src="Image/photo-4.jpg" alt="portfolio-img" class="portfolio-item">
-                        </div>
-                        <div class="product-info">
-                            <div class="product-link d-flex justify-content-center">
-                                <a class="img-pop" data-rel="lightcase" href="Image/photo-4.jpg" title="Photo-1">
-                                    <span><i class="fa fa-arrows"></i></span>
-                                </a>
-                                <a class="ext-link" href="https://unsplash.com/" target="_blank">
-                                    <span><i class="fa fa-link"></i></span>
-                                </a>
-                                <div class="product-title">
-                                    <h4>Hidden Book</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 text-center Creative">
-                        <div class="single-product-item">
-                            <img src="Image/photo-7.jpg" alt="portfolio-img" class="portfolio-item">
-                        </div>
-                        <div class="product-info">
-                            <div class="product-link d-flex justify-content-center">
-                                <a class="img-pop" data-rel="lightcase" href="Image/photo-7.jpg" title="Photo-1">
-                                    <span><i class="fa fa-arrows"></i></span>
-                                </a>
-                                <a class="ext-link" href="https://unsplash.com/" target="_blank">
-                                    <span><i class="fa fa-link"></i></span>
-                                </a>
-                                <div class="product-title">
-                                    <h4>Chair</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 text-center Creative">
-                        <div class="single-product-item">
-                            <img src="Image/photo-9.jpg" alt="portfolio-img" class="portfolio-item">
+                        <div class="single-product-item  Creative">
                             <div class="product-info">
+                                <img src="Image/photo-2.jpg" alt="portfolio-img" class="portfolio-item">
+                                <div class="product-link d-flex justify-content-center">
+                                    <a class="img-pop" data-rel="lightcase" href="Image/photo-2.jpg" title="Photo-1">
+                                        <span><i class="fa fa-arrows"></i></span>
+                                    </a>
+                                    <a class="ext-link" href="https://unsplash.com/" target="_blank">
+                                        <span><i class="fa fa-link"></i></span>
+                                    </a>
+                                    <div class="product-title">
+                                        <h4>Breakfast</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-product-item Vintage">
+                            <div class="product-info">
+                                <img src="Image/photo-4.jpg" alt="portfolio-img" class="portfolio-item">
+                                <div class="product-link d-flex justify-content-center">
+                                    <a class="img-pop" data-rel="lightcase" href="Image/photo-4.jpg" title="Photo-1">
+                                        <span><i class="fa fa-arrows"></i></span>
+                                    </a>
+                                    <a class="ext-link" href="https://unsplash.com/" target="_blank">
+                                        <span><i class="fa fa-link"></i></span>
+                                    </a>
+                                    <div class="product-title">
+                                        <h4>Hidden Book</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-product-item Creative">
+                            <div class="product-info">
+                                <img src="Image/photo-7.jpg" alt="portfolio-img" class="portfolio-item">
+                                <div class="product-link d-flex justify-content-center">
+                                    <a class="img-pop" data-rel="lightcase" href="Image/photo-7.jpg" title="Photo-1">
+                                        <span><i class="fa fa-arrows"></i></span>
+                                    </a>
+                                    <a class="ext-link" href="https://unsplash.com/" target="_blank">
+                                        <span><i class="fa fa-link"></i></span>
+                                    </a>
+                                    <div class="product-title">
+                                        <h4>Chair</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-product-item Creative">
+                            <div class="product-info">
+                                <img src="Image/photo-9.jpg" alt="portfolio-img" class="portfolio-item">
                                 <div class="product-link d-flex justify-content-center">
                                     <a class="img-pop" data-rel="lightcase" href="Image/photo-9.jpg" title="Photo-1">
                                         <span><i class="fa fa-arrows"></i></span>
@@ -428,45 +419,41 @@
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Portfolio : the end -->
-        <!-- Client-slider -->
-        <div class="Factor  Client-slider">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="section-heading text-center mb-5">
-                            <h2 class="text-white">Who love to work with us</h2>
-                        </div>
+    </div>
+    <!-- Portfolio : the end -->
+    <!-- Client-slider -->
+    <div class="Factor  Client-slider">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading text-center mb-5">
+                        <h2 class="text-white">Who love to work with us</h2>
                     </div>
-                    <div class="col-md-12">
-                        <div class="client-holder owl-carousel owl-theme">
-                            <div class="item"><img class="img-responsive" src="image/client.png" alt=""
-                                    style="width: 60%;">
-                            </div>
-                            <div class="item"><img class="img-responsive" src="image/client.png" alt=""
-                                    style="width: 60%;">
-                            </div>
-                            <div class="item"><img class="img-responsive" src="image/client.png" alt=""
-                                    style="width: 60%;">
-                            </div>
-                            <div class="item"><img class="img-responsive" src="image/client.png" alt=""
-                                    style="width: 60%;">
-                            </div>
-                            <div class="item"><img class="img-responsive" src="image/client.png" alt=""
-                                    style="width: 60%;">
-                            </div>
-                            <div class="item"><img class="img-responsive" src="image/client.png" alt=""
-                                    style="width: 60%;">
-                            </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="client-holder owl-carousel owl-theme">
+                        <div class="item"><img class="img-responsive" src="image/client.png" alt="" style="width: 60%;">
+                        </div>
+                        <div class="item"><img class="img-responsive" src="image/client.png" alt="" style="width: 60%;">
+                        </div>
+                        <div class="item"><img class="img-responsive" src="image/client.png" alt="" style="width: 60%;">
+                        </div>
+                        <div class="item"><img class="img-responsive" src="image/client.png" alt="" style="width: 60%;">
+                        </div>
+                        <div class="item"><img class="img-responsive" src="image/client.png" alt="" style="width: 60%;">
+                        </div>
+                        <div class="item"><img class="img-responsive" src="image/client.png" alt="" style="width: 60%;">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <!-- Client-slider : the end -->
     <!-- Contact us -->

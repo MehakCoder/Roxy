@@ -37,7 +37,7 @@ a {
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     text-decoration: none;
     color: #333399;
 }
@@ -46,15 +46,18 @@ a:hover{
 .font-color {
     color: #ff00cc;
 }
-span{
+
+span {
     font-size: 14px;
     font-weight: bold;
     text-decoration: underline;
     display: block;
 }
-span:hover{
+
+span:hover {
     text-decoration: none;
 }
+
 .Feature,
 .Factor-section,
 .Testimonial,
@@ -65,7 +68,8 @@ span:hover{
     padding-top: 80px;
     padding-bottom: 80px;
 }
-img{
+
+img {
     display: block;
     width: 100%;
     height: auto;
@@ -90,33 +94,129 @@ img{
     border-color: #fff;
 }
 
-.btn-primary:hover,.btn-pink:hover {
+.btn-primary:hover,
+.btn-pink:hover {
     background-color: #333399 !important;
     background-image: none;
     border-color: #333399 !important;
 }
- .btn-primary:focus{
+
+.btn-primary:focus {
     background-color: transparent;
     border-color: #0a58ca;
     box-shadow: 0 0 0 0.25rem rgb(49 132 253 / 50%);
 }
-.btn-pink{
+
+.btn-pink {
     font-size: 14px;
     display: inline-block;
     background-color: #ff00cc;
     border-color: #ff00cc;
     box-shadow: -5px 8px 20px 0px rgb(229 16 2 / 15%);
 }
+
 .form-control:focus {
     border-color: #ff00cc;
     box-shadow: 0 0 0 0.2rem rgb(253 101 90 / 25%);
 }
+
 /* Header-navbar */
+.header-navbar {
+    position: relative;
+    opacity: 0.8;
+    background: linear-gradient(to right, #333399, #ff00cc);
+}
 
+.navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 11;
+    transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
 
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1002;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    color: #fff;
+}
 
+.jumbotron {
+    color: #fff;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+}
 
+.jumbotron .container {
+    position: relative;
+    z-index: 1;
+}
 
+.jumbotron h1 {
+    line-height: .9;
+    font-weight: bold;
+    display: inline-block;
+    border: 15px solid #fff;
+    padding: 30px;
+    font-size: 9rem;
+    margin-left: 300px
+}
+
+.rectangle-1 {
+    width: 2000px;
+    height: 400px;
+    background: linear-gradient(to right, #4A00E0, #8E2DE2);
+    transform-origin: 50% 150% 0;
+    position: absolute;
+    left: 0;
+    z-index: 0;
+    transform: scale(1) rotate(-10deg);
+}
+
+.rectangle-2 {
+    width: 2000px;
+    height: 400px;
+    background: linear-gradient(to right, #4A00E0, #8E2DE2);
+    transform-origin: 66% 100% 0;
+    position: absolute;
+    right: 0;
+    z-index: 0;
+    transform: scale(1) rotate(50deg);
+}
+
+.rectangle-transparent-1 {
+    width: 500px;
+    height: 500px;
+    border: 15px solid rgba(255, 255, 255, 0.08);
+    position: absolute;
+    left: -20%;
+    bottom: -10%;
+    display: block;
+}
+.rectangle-transparent-2 {
+    width: 600px;
+    height: 600px;
+    border: 15px solid rgba(255, 255, 255, 0.08);
+    position: absolute;
+    right: -10%;
+    bottom: 5%;
+    display: block;
+}
 
 
 
@@ -132,7 +232,7 @@ img{
 .Factor {
     position: relative;
     background-image: url(../Image/bg.jpg);
-    background-position: 0% 3.56562px;;
+    background-position: 0% 3.56562px;
     background-size: cover;
     color: #fff;
     margin-bottom: 80px;
@@ -149,30 +249,35 @@ img{
     right: 0;
     background: linear-gradient(to right, #333399, #ff00cc);
 }
-#section-contain{
+
+#section-contain {
     position: relative;
     padding-top: 80px;
     padding-bottom: 80px;
     z-index: 2;
 }
+
 /* Factor : the end */
 /* Factor-section */
-.progress-bar{
+.progress-bar {
     background-color: #ff00cc;
 }
+
 /* Factor-section : the end */
 /*  Testimonials: Start */
-.Testimonial{
+.Testimonial {
     position: relative;
     background-image: url(../Image/bg-white.jpg);
     background-position: 0% 14.0344px;
     background-size: cover;
-    
+
 }
-.bg-white{
+
+.bg-white {
     color: #000;
 }
-.Testimonial:before{
+
+.Testimonial:before {
     position: absolute;
     display: block;
     content: "";
@@ -183,20 +288,24 @@ img{
     right: 0;
     background: #fff;
 }
-.section-heading{
+
+.section-heading {
     position: relative;
-    z-index: 2; 
+    z-index: 2;
     margin-bottom: 80px;
 }
-.test-item .fa{
+
+.test-item .fa {
     font-size: 50px;
     font-weight: 900;
     padding-bottom: 50px;
 }
+
 .testi-text {
     font-weight: 300;
     padding-bottom: 50px;
 }
+
 .testi-img img {
     height: 60px;
     width: 60px !important;
@@ -204,51 +313,63 @@ img{
     display: inline-block !important;
     margin-right: 6px;
 }
+
 /* Testimonials : the end */
 /* Portfolio */
-/* .single-product-item{
+.single-product-item {
     position: relative;
-    height: 887.36px;
+    margin-bottom: 20px;
+    border-radius: 5px;
     overflow: hidden;
+    width: 32%;
 }
-.product-info{
-    position: absolute;
-    top: 0;
-    left: 0;
-} */
 
-.Portfolio-filters a{
-    margin: 5px;
-    cursor: pointer;
+.product-info {
+    position: absolute;
+    content: " ";
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.7);
+    transition: all 0.3s ease;
+    opacity: 0;
+
 }
-.product-lists{
-    margin: 16px;
-    column-count: 3;
-    display: flex;
+
+.product-info:hover {
+    opacity: 1;
 }
+
+
 /* Portfolio */
 
 /* client-slider */
- .Client-slider{
+.Client-slider {
     background-position: 0% -58.9125px;
 }
 
-.Client-holder .item{
+.Client-holder .item {
     padding: 0 40px;
 }
-span .fa{
+
+span .fa {
     font-size: 20px !important;
     margin-top: 10px;
 }
+
 /* client-slider : the end */
 /* New Project */
-.New-project{
+.New-project {
     background-position: 0% -15.0937px;
     margin-bottom: 0;
     padding-bottom: 0;
 }
-nav span .fa{
+
+nav span .fa {
     font-size: 16px !important;
     padding: 0.5rem 1rem;
 }
+
 /* New Project */
