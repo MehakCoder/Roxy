@@ -186,7 +186,10 @@ img {
     z-index: 0;
     transform: scale(1) rotate(-10deg);
 }
-
+.rectangle-1 {
+    animation: grow1 ease 1s forwards;
+    box-shadow: 0px 20px 30px 0px rgb(9 21 54 / 25%) !important;
+}
 .rectangle-2 {
     width: 2000px;
     height: 400px;
@@ -203,10 +206,12 @@ img {
     height: 500px;
     border: 15px solid rgba(255, 255, 255, 0.08);
     position: absolute;
-    left: -20%;
+    left: -5%;
     bottom: -10%;
     display: block;
+    animation: floating-slow ease-in-out 12s infinite;
 }
+
 
 .rectangle-transparent-2 {
     width: 600px;
@@ -216,9 +221,74 @@ img {
     right: -10%;
     bottom: 5%;
     display: block;
+   animation: floating-slow ease-in-out 12s infinites;
 }
-
-
+.circle-1 {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    transform-origin: 50% 50%;
+    left: 5%;
+    top: 50%;
+    animation: fadeInFromTop .5s linear forwards, floating ease 4s infinite;
+}
+.circle-2 {
+    width: 70px;
+    height: 70px;
+    top: 20%;
+    left: 83%;
+    border: 2px solid #fff;
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    transform-origin: 50% 50%;
+    animation: fadeInFromTop .5s linear forwards, floating ease-in-out 4s infinite;
+}
+.circle-3 {
+    top: 80%;
+    right: 25%;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #fff;
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    animation: fadeInFromTop .5s linear forwards, floating ease-in-out 4s infinite;
+}
+.triangle-1 {
+    right: 0;
+    animation: fadeInFromTop .5s linear forwards, floating ease-in-out 6s infinite;
+}
+.triangle-1 img {
+    height: 50px;
+    width: 50px;
+    transform: rotate(30deg);
+}
+.triangle-2 img{
+    top: 30%;
+    left: 20%;
+    animation: fadeInFromTop .5s linear forwards, floating ease-in-out 8s infinite;
+    width: 75px;
+    height: 75px;
+    transform: rotate(15deg);
+}
+.triangle-3 img{
+    top: 80%;
+    left: 15%;
+    animation: fadeInFromTop .5s linear forwards, floating ease-in-out 10s infinite;
+    width: 45px;
+    height: 45px;
+    transform: rotate(40deg);
+}
+.triangle-4 img{
+    
+}
+.triangle {
+    position: absolute;
+}
 
 
 /* Header-navbar */
