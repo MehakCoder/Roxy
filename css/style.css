@@ -121,173 +121,13 @@ img {
 }
 
 /* Header-navbar */
-.header-navbar {
+.header-navbar{
     position: relative;
-    opacity: 0.8;
-    background: linear-gradient(to right, #333399, #ff00cc);
-}
-
-.navbar {
-    position: absolute;
     top: 0;
     right: 0;
     left: 0;
     z-index: 11;
-    transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-}
-
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1002;
-    top: 0;
-    left: 0;
-    background-color: #000;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-    color: #fff;
-}
-
-.jumbotron {
-    padding-top: 80px;
-    padding-bottom: 80px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-    position: relative;
-    overflow: hidden;
-    min-height: 100vh;
-}
-
-.jumbotron .container {
-    position: relative;
-    z-index: 1;
-}
-
-.jumbotron h1 {
-    line-height: .9;
-    font-weight: bold;
-    display: inline-block;
-    border: 15px solid #fff;
-    padding: 30px;
-    font-size: 9rem;
-    margin-left: 300px
-}
-
-.rectangle-1 {
-    width: 2000px;
-    height: 400px;
-    background: linear-gradient(to right, #4A00E0, #8E2DE2);
-    transform-origin: 50% 150% 0;
-    position: absolute;
-    left: 0;
-    z-index: 0;
-    transform: scale(1) rotate(-10deg);
-}
-.rectangle-1 {
-    animation: grow1 ease 1s forwards;
-    box-shadow: 0px 20px 30px 0px rgb(9 21 54 / 25%) !important;
-}
-.rectangle-2 {
-    width: 2000px;
-    height: 400px;
-    background: linear-gradient(to right, #4A00E0, #8E2DE2);
-    transform-origin: 66% 100% 0;
-    position: absolute;
-    right: 0;
-    z-index: 0;
-    transform: scale(1) rotate(50deg);
-}
-
-.rectangle-transparent-1 {
-    width: 500px;
-    height: 500px;
-    border: 15px solid rgba(255, 255, 255, 0.08);
-    position: absolute;
-    left: -5%;
-    bottom: -10%;
-    display: block;
-    animation: floating-slow ease-in-out 12s infinite;
-}
-
-
-.rectangle-transparent-2 {
-    width: 600px;
-    height: 600px;
-    border: 15px solid rgba(255, 255, 255, 0.08);
-    position: absolute;
-    right: -10%;
-    bottom: 5%;
-    display: block;
-   animation: floating-slow ease-in-out 12s infinites;
-}
-.circle-1 {
-    width: 50px;
-    height: 50px;
-    border: 2px solid #fff;
-    position: absolute;
-    display: block;
-    border-radius: 50%;
-    transform-origin: 50% 50%;
-    left: 5%;
-    top: 50%;
-    animation: fadeInFromTop .5s linear forwards, floating ease 4s infinite;
-}
-.circle-2 {
-    width: 70px;
-    height: 70px;
-    top: 20%;
-    left: 83%;
-    border: 2px solid #fff;
-    position: absolute;
-    display: block;
-    border-radius: 50%;
-    transform-origin: 50% 50%;
-    animation: fadeInFromTop .5s linear forwards, floating ease-in-out 4s infinite;
-}
-.circle-3 {
-    top: 80%;
-    right: 25%;
-    width: 40px;
-    height: 40px;
-    border: 2px solid #fff;
-    position: absolute;
-    display: block;
-    border-radius: 50%;
-    animation: fadeInFromTop .5s linear forwards, floating ease-in-out 4s infinite;
-}
-.triangle-1 {
-    right: 0;
-    animation: fadeInFromTop .5s linear forwards, floating ease-in-out 6s infinite;
-}
-.triangle-1 img {
-    height: 50px;
-    width: 50px;
-    transform: rotate(30deg);
-}
-.triangle-2 img{
-    top: 30%;
-    left: 20%;
-    animation: fadeInFromTop .5s linear forwards, floating ease-in-out 8s infinite;
-    width: 75px;
-    height: 75px;
-    transform: rotate(15deg);
-}
-.triangle-3 img{
-    top: 80%;
-    left: 15%;
-    animation: fadeInFromTop .5s linear forwards, floating ease-in-out 10s infinite;
-    width: 45px;
-    height: 45px;
-    transform: rotate(40deg);
-}
-.triangle-4 img{
-    
-}
-.triangle {
-    position: absolute;
+    transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.8
 }
 
 
@@ -386,32 +226,69 @@ img {
 
 /* Testimonials : the end */
 /* Portfolio */
+.Portfolio-filters {
+    margin-bottom: 15px;
+}
+
+.Portfolio-filters a {
+    margin: 5px;
+    cursor: pointer;
+}
+
+.product-link a {
+    margin: 5px;
+    font-size: 20px;
+    color: #000;
+}
+
+.product-lists {
+    overflow: hidden;
+}
+
+.single-product-item{
+    width: 100%;
+}
+
 .single-product-item {
     position: relative;
     margin-bottom: 20px;
     border-radius: 5px;
     overflow: hidden;
-    width: 32%;
 }
 
-.product-info {
-    position: absolute;
-    content: " ";
-    display: block;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(255, 255, 255, 0.7);
-    transition: all 0.3s ease;
-    opacity: 0;
-
-}
-
-.product-info:hover {
+.single-product-item:hover .product-link {
+    top: 50%;
     opacity: 1;
 }
 
+.single-product-item:before {
+    content: '';
+    display: block;
+    background: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: all .3s ease;
+    opacity: 0;
+}
+
+.single-product-item:hover:before {
+    opacity: 1;
+}
+
+.product-link {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease;
+}
+.product-title {
+    text-align: center;
+}
 
 /* Portfolio */
 
