@@ -121,16 +121,247 @@ img {
 }
 
 /* Header-navbar */
-.header-navbar{
+.header-navbar {
     position: relative;
+    z-index: 11;
+}
+
+#Head-navbar {
+    position: absolute;
     top: 0;
     right: 0;
     left: 0;
     z-index: 11;
-    transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.8
+    transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    transition: .3s ease;
+}
+
+.navbar-nav:hover .nav-item .nav-link {
+    opacity: 0.5;
+}
+
+.navbar-nav:hover .nav-item .nav-link:hover {
+    opacity: 1;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1002;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    color: #fff;
+}
+
+#side-search .form-control {
+    background-color: transparent;
+}
+
+#side-search .input-group-text {
+    background: transparent;
+    color: #fff;
+    padding: 0;
+}
+
+#side-search-open span .fa,
+#side-nav-open span .fa {
+    font-size: 16px !important;
+    padding: 0 !important;
+    margin-top: 0 !important;
+}
+
+/* Jumbootron : start */
+.jumbotron {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+.jumbotron:before {
+    position: absolute;
+    display: block;
+    content: "";
+    opacity: 0.8;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, #333399, #ff00cc);
+}
+
+.jumbotron .container {
+    position: relative;
+    z-index: 1;
+}
+
+.jumbotron h1 {
+    line-height: .9;
+    font-weight: bold;
+    display: inline-block;
+    border: 15px solid #fff;
+    padding: 30px;
+    font-size: 9rem;
+    animation: 1s fadeInFromTop cubic-bezier(0.785, 0.135, 0.15, 0.86) 1s forwards;
+    animation-delay: .8s;
+}
+
+.rectangle-1 {
+    width: 2000px;
+    height: 400px;
+    background: linear-gradient(to right, #4A00E0, #8E2DE2);
+    transform-origin: 50% 150% 0;
+    position: absolute;
+    left: 0;
+    z-index: 0;
+    transform: scale(1) rotate(-10deg);
+
+}
+
+.rectangle-1,
+.rectangle-2 {
+    box-shadow: 0px 20px 30px 0px rgb(9 21 54 / 25%) !important;
+}
+
+.rectangle-2 {
+    width: 2000px;
+    height: 400px;
+    background: linear-gradient(to right, #4A00E0, #8E2DE2);
+    transform-origin: 65% 100% 0;
+    position: absolute;
+    right: 0;
+    z-index: 0;
+    transform: scale(1) rotate(50deg);
+
+}
+
+/* Jumbotron: the end */
+/* Transpartent-figure */
+.rectangle-transparent-1 {
+    width: 500px;
+    height: 500px;
+    border: 15px solid rgba(255, 255, 255, 0.08);
+    position: absolute;
+    left: -5%;
+    bottom: -10%;
+    display: block;
+    animation: floating-slow ease-in-out 12s infinite;
+}
+
+.rectangle-transparent-2 {
+    width: 600px;
+    height: 600px;
+    border: 15px solid rgba(255, 255, 255, 0.08);
+    position: absolute;
+    right: -10%;
+    top: 5%;
+    display: block;
+    animation: floating-slow ease-in-out 12s infinite;
+}
+
+.circle-1 {
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    transform-origin: 50% 50%;
+    left: 5%;
+    top: 50%;
+    animation: fadeInFromTop .5s linear forwards, floating ease 4s infinite;
+}
+
+.circle-2 {
+    position: absolute;
+    display: block;
+    width: 70px;
+    height: 70px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    transform-origin: 50% 50%;
+    left: 83%;
+    top: 20%;
+    animation: fadeInFromTop .5s linear forwards, floating ease-in-out 4s infinite;
+}
+
+.circle-3 {
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    transform-origin: 50% 50%;
+    right: 25%;
+    top: 80%;
+    animation: fadeInFromTop .5s linear forwards, floating ease-in-out 4s infinite;
+}
+
+.triangle {
+    position: absolute;
+}
+
+.triangle-1 {
+    right: 0;
+    animation: fadeInFromTop .5s linear forwards, floating ease-in-out 6s infinite;
+}
+
+.triangle-1 img {
+    width: 50px;
+    height: 50px;
+    transform: rotate(30deg);
 }
 
 
+.triangle-2 {
+    top: 30%;
+    left: 20%;
+    animation: fadeInFromTop .5s linear forwards, floating ease-in-out 8s infinite;
+}
+
+.triangle-2 img {
+    width: 75px;
+    height: 75px;
+    transform: rotate(15deg);
+}
+
+.triangle-3 {
+    top: 80%;
+    left: 15%;
+    animation: fadeInFromTop .5s linear forwards, floating ease-in-out 10s infinite;
+}
+
+.triangle-3 img {
+    width: 45px;
+    height: 45px;
+    transform: rotate(40deg);
+}
+
+
+.triangle-4 {
+    top: 60%;
+    right: 15%;
+    animation: fadeInFromTop .5s linear forwards, floating ease-in-out 5s infinite;
+}
+
+.triangle-4 img {
+    width: 45px;
+    height: 45px;
+    transform: rotate(-40deg);
+}
+
+/* Transparent-figure:the end */
 /* Header-navbar */
 /* Feature */
 .features-holder {
@@ -235,6 +466,32 @@ img {
     cursor: pointer;
 }
 
+.grid-portfolio {
+    overflow: hidden;
+}
+
+.grid-item-wrapper:before {
+    content: '';
+    display: block;
+    background: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: all .3s ease;
+    opacity: 0;
+}
+
+.grid-sizer,
+.grid-item {
+    width: 32%;
+}
+
+.grid-item--width {
+    width: 32%;
+    float: left;
+}
 .product-link a {
     margin: 5px;
     font-size: 20px;
@@ -245,7 +502,7 @@ img {
     overflow: hidden;
 }
 
-.single-product-item{
+.single-product-item {
     width: 100%;
 }
 
@@ -286,6 +543,7 @@ img {
     opacity: 0;
     transition: all .3s ease;
 }
+
 .product-title {
     text-align: center;
 }
@@ -304,6 +562,7 @@ img {
 span .fa {
     font-size: 20px !important;
     margin-top: 10px;
+    padding: 0.5rem 1rem;
 }
 
 /* client-slider : the end */
@@ -314,9 +573,48 @@ span .fa {
     padding-bottom: 0;
 }
 
-nav span .fa {
-    font-size: 16px !important;
-    padding: 0.5rem 1rem;
+/* New Project */
+/* animation keyframe */
+@keyframes floating {
+    0% {
+        transform: translate(0%, 0%) rotate(25deg);
+    }
+
+    25% {
+        transform: translate(5%, 15%) rotate(25deg);
+    }
+
+    50% {
+        transform: translate(10%, 5%) rotate(25deg);
+    }
+
+    75% {
+        transform: translate(0%, 15%) rotate(25deg);
+    }
+
+    100% {
+        transform: translate(0%, 0%) rotate(25deg);
+    }
 }
 
-/* New Project */
+@keyframes floating-slow {
+    0% {
+        transform: translate(0%, 0%) rotate(25deg);
+    }
+
+    25% {
+        transform: translate(1%, 3%) rotate(25deg);
+    }
+
+    50% {
+        transform: translate(2%, 1%) rotate(25deg);
+    }
+
+    75% {
+        transform: translate(0%, 3%) rotate(25deg);
+    }
+
+    100% {
+        transform: translate(0%, 0%) rotate(25deg);
+    }
+}

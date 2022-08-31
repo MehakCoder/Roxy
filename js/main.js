@@ -1,23 +1,22 @@
+// 1. side-nav
 function openNav() {
-  document.getElementById("side-nav").style.width = "250px";
-  document.getElementById("side-nav-open").style.marginLeft = "250px";
+  document.getElementById("side-nav").style.width = "300px";
   document.body.style.backgroundColor = "#000000";
 }
 function closeNav() {
   document.getElementById("side-nav").style.width = "0";
-  document.getElementById("side-nav-open").style.marginLeft = "0";
   document.body.style.backgroundColor = "white";
 } 
+//2.side-search
 function openSearch() {
-  document.getElementById("side-search").style.width = "250px";
-  document.getElementById("side-search-open").style.marginLeft = "250px";
+  document.getElementById("side-search").style.width = "300px";
   document.body.style.backgroundColor = "#000000";
 }
 function closeSearch() {
   document.getElementById("side-search").style.width = "0";
-  document.getElementById("side-search-open").style.marginLeft = "0";
   document.body.style.backgroundColor = "white";
-} 
+}
+//3.testimonial-silder 
 $('#Testimonial-slider').owlCarousel({
   loop:true,
   margin:10,
@@ -34,6 +33,7 @@ $('#Testimonial-slider').owlCarousel({
       }
   }
 })
+// 4. Portfolio
 $(".Portfolio-filters a").on('click', function () {
 
   $(".Portfolio-filters a").removeClass("active");
@@ -41,11 +41,16 @@ $(".Portfolio-filters a").on('click', function () {
 
   var selector = $(this).attr('data-filter');
 
-  $(".product-lists").isotope({
+  $(".grid-portfolio").isotope({
       filter: selector,
   });
 
 });
+$('.grid-portfolio').masonry({
+  itemSelector: '.grid-item',
+  columnWidth: 100,
+});
+//5. client-holder
 $('.client-holder ').owlCarousel({
   loop:true,
   margin:10,
@@ -62,6 +67,7 @@ $('.client-holder ').owlCarousel({
       }
   }
 })
+//6. AOS
 $(function () {
 
   AOS.init();
