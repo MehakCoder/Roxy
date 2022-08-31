@@ -6,7 +6,7 @@ function openNav() {
 function closeNav() {
   document.getElementById("side-nav").style.width = "0";
   document.body.style.backgroundColor = "white";
-} 
+}
 //2.side-search
 function openSearch() {
   document.getElementById("side-search").style.width = "300px";
@@ -18,22 +18,23 @@ function closeSearch() {
 }
 //3.testimonial-silder 
 $('#Testimonial-slider').owlCarousel({
-  loop:true,
-  margin:10,
-  nav:false,
-  responsive:{
-      0:{
-          items:1
-      },
-      600:{
-          items:1
-      },
-      1000:{
-          items:1
-      }
+  loop: true,
+  margin: 10,
+  nav: false,
+  responsive: {
+    0: {
+      items: 1
+    },
+    600: {
+      items: 1
+    },
+    1000: {
+      items: 1
+    }
   }
 })
 // 4. Portfolio
+
 $(".Portfolio-filters a").on('click', function () {
 
   $(".Portfolio-filters a").removeClass("active");
@@ -42,34 +43,31 @@ $(".Portfolio-filters a").on('click', function () {
   var selector = $(this).attr('data-filter');
 
   $(".grid-portfolio").isotope({
-      filter: selector,
+    filter: selector,
   });
 
 });
-$('.grid-portfolio').masonry({
-  itemSelector: '.grid-item',
-  columnWidth: 100,
-});
+
 //5. client-holder
 $('.client-holder ').owlCarousel({
-  loop:true,
-  margin:10,
-  nav:true,
-  responsive:{
-      0:{
-          items:1
-      },
-      600:{
-          items:3
-      },
-      1000:{
-          items:6
-      }
+  loop: true,
+  margin: 10,
+  nav: true,
+  responsive: {
+    0: {
+      items: 1
+    },
+    600: {
+      items: 3
+    },
+    1000: {
+      items: 6
+    }
   }
 })
 //6. AOS
 $(function () {
 
   AOS.init();
-  
-  });
+
+});
