@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roxy</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Work+Sans:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- header-navbar : the end -->
+    <div class="header-navbar">
+        <nav id="Head-navbar" class="navbar navbar-expand-lg py-4 navbar-transparent">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center text-white" href="#">
+                    <h2 class="font-weight-bolder mb-0">ROXY</h2>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav ml-auto ">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-white" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white">content</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="side-search-open" class="nav-link text-white" href="#">
+                                <span onclick="openSearch()"><i class="fa fa-search"></i></span>
+                            </a>
+                        </li>
+                        <li class="nav-item only-desktop">
+                            <a class="nav-link text-white" id="side-nav-open" href="#">
+                                <span onclick="openNav()"><i class="fa fa-bars"></i></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="side-nav" class="sidenav">
+            <a href="javascript:void(0)" id="side-nav-close" onclick="closeNav()">&times;</a>
+            <div class="sidenav-content">
+                <p class="text-white">
+                    Kuncen WB1, Wirobrajan 10010, DIY
+                </p>
+                <p class="text-white">
+                    <span class="fs-16 primary-color">(+68) 120034509</span>
+                </p>
+                <p class="text-white">info@yourdomain.com</p>
+            </div>
+        </div>
+        <div id="side-search" class="sidenav">
+            <a href="javascript:void(0)" id="side-search-close" onclick="closeSearch()">&times;</a>
+            <div class="sidenav-content">
+                <form action="">
+
+                    <div class="input-group md-form form-sm form-2 pl-0">
+                        <input class="form-control my-0  red-border" type="text" placeholder="Search"
+                            aria-label="Search">
+                        <div class="input-group-append">
+                            <button class="input-group-text red lighten-3" id="basic-text1">
+                                <span><i class="fa fa-search"></i></span>
+                            </button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <div class="jumbotron jumbotron-single d-flex align-items-center">
+            <div class="container text-center">
+                <h1 class="display-2 mb-4 text-white text-center">About</h1>
+            </div>
+        </div>
+    </div>
+    <!-- header-navbar : the end -->
+    <!-- Our Work -->
+    <section id="Work">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-heading text-center mb-5" data-aos="fade-up">
+                        <h2>The easiest way <br>to build <b>websites online</b></h2>
+                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nulla vitae elit libero,
+                            a
+                            <br>pharetra augue. Donec id elit non mi porta gravida at eget metus.
+                        </p>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4 col-sm-6" data-aos="fade-up">
+                        <img class="rounded-circle" src="Image/animat-checkmark.gif" alt="Generic placeholder image"
+                            style="width:140px; height: 140px;">
+                        <h3 class="mb-4" style="font-size:20px">Simple and Clean</h3>
+                        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh
+                            ultricies vehicula ut id elit.</p>
+                        <a class="btn text-pink mb-3" href=""><b>View details</b></a>
+                    </div>
+                    <div class="col-md-4 col-sm-6" data-aos="fade-up">
+                        <img class="rounded-circle" src="Image/animat-customize.gif" alt="Generic placeholder image"
+                            style="width:140px; height: 140px;">
+                        <h3 class="mb-4" style="font-size:20px">Easy to Customize</h3>
+                        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh
+                            ultricies vehicula ut id elit.</p>
+                        <a class="btn text-pink mb-3" href=""><b>View details</b></a>
+                    </div>
+                    <div class="col-md-4 col-sm-6" data-aos="fade-up">
+                        <img class="rounded-circle" src="Image/animat-responsive.gif" alt="Generic placeholder image"
+                            style="width:140px; height: 140px;">
+                        <h3 class="mb-4" style="font-size:20px">Fully Responsive</h3>
+                        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh
+                            ultricies vehicula ut id elit.</p>
+                        <a class="btn text-pink mb-3" href=""><b>View details</b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Our Work : the end -->
+    <!-- Skill -->
+    <section id="skills" class="bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6" data-aos="fade-right">
+                    <div class="skill-item">
+                        <div class="d-flex justify-content-between">
+                            <p>HTML5</p>
+                            <p class="text-muted">90%</p>
+                        </div>
+                        <div class="progress" data-percent="90%">
+                            <div class="progress-bar" id="progress-value" role="progressbar" aria-valuenow="90"
+                                aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="d-flex justify-content-between">
+                            <p>CSS3</p>
+                            <p class="text-muted">85%</p>
+                        </div>
+                        <div class="progress" data-percent="85%">
+                            <div class="progress-bar" id="progress-value" role="progressbar" aria-valuenow="85"
+                                aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="d-flex justify-content-between">
+                            <p>JQUERY</p>
+                            <p class="text-muted">73%</p>
+                        </div>
+                        <div class="progress" data-percent="73%">
+                            <div class="progress-bar" id="progress-value" role="progressbar" aria-valuenow="73"
+                                aria-valuemin="0" aria-valuemax="100" style="width: 73%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="skill-item">
+                        <div class="d-flex justify-content-between">
+                            <p>ADOBE PHOTOSHOP</p>
+                            <p class="text-muted">80%</p>
+                        </div>
+                        <div class="progress" data-percent="80%">
+                            <div class="progress-bar" id="progress-value" role="progressbar" aria-valuenow="80"
+                                aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="d-flex justify-content-between">
+                            <p>ADOBE ILLUSTRATOR</p>
+                            <p class="text-muted">60%</p>
+                        </div>
+                        <div class="progress" data-percent="60%">
+                            <div class="progress-bar" id="progress-value" role="progressbar" aria-valuenow="60"
+                                aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="d-flex justify-content-between">
+                            <p>WORDPRESS</p>
+                            <p class="text-muted">55%</p>
+                        </div>
+                        <div class="progress" data-percent="55%">
+                            <div class="progress-bar" id="progress-value" role="progressbar" aria-valuenow="55"
+                                aria-valuemin="0" aria-valuemax="100" style="width: 55%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Skill : the end -->
+    <!-- New Project -->
+    <div class="Factor New-project">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading text-center mb-5" data-aos="fade-up">
+                        <h2 class="text-white mb-2">Make a beautiful website, or million of them</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, veritatis qui eligendi
+                            delectus quia fuga!</p>
+                        <button type="button" class="btn btn-primary text-white">FEATURES</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- New Project : the end -->
+    <!-- Footer-->
+    <footer class="mastfoot my-3">
+        <div class="inner container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 d-flex align-items-center">
+
+                </div>
+                <div class="col-lg-4 col-md-12 d-flex align-items-center">
+                    <p class="mx-auto text-center mb-0">&copy; 2019 Roxy. Design by <a href="https://gettemplates.co"
+                            target="_blank">GetTemplates</a>.</p>
+                </div>
+
+                <div class="col-lg-4 col-md-12">
+                    <nav class="nav nav-mastfoot justify-content-center" id="nav-icons">
+                        <a href="#">
+                            <span> <i class="fa fa-facebook"></i></span>
+                        </a>
+                        <a href="#">
+                            <span><i class="fa fa-twitter"></i></span>
+                        </a>
+                        <a href="#">
+                            <span><i class="fa fa-instagram"></i></span>
+                        </a>
+                        <a href="#">
+                            <span><i class="fa fa-linkedin-square"></i></span>
+                        </a>
+                        <a href="#">
+                            <span><i class="fa fa-youtube-play"></i></span>
+                        </a>
+                    </nav>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Footer : the end -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/masonry-docs.min.js"></script>
+    <script src="js/isotope-docs.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

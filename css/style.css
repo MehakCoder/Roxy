@@ -543,8 +543,50 @@ span .fa {
     margin-bottom: 0;
     padding-bottom: 0;
 }
+/* New Project:the end */
+/* ------------------------------------------------------------------------------------------------------------------- */
+/* Jumbotron single */
+.jumbotron-single{
+    background-image: url(../Image/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 80px;
+}
 
-/* New Project */
+.jumbotron-single h1{
+    font-size: 48px;
+    animation: 1s fadeInFromTop cubic-bezier(0.785, 0.135, 0.15, 0.86) 1s forwards;
+    animation-delay: .8s;
+}
+/* Jumbotron : the end */
+/* Our Work */
+#Work{
+    padding-bottom: 80px;
+}
+.rounded-circle {
+    display: initial;
+    border-radius: 50%!important;
+}
+a.btn:hover{
+    color: #333399; 
+}
+a.btn:focus{
+    text-decoration: underline;
+    box-shadow: none;
+}
+/* Our Work : the end */
+/* Skill */
+#skills{
+    padding-bottom: 80px;
+}
+#progress-value{
+    animation:load 1s normal forwards; ;
+}
+
+
+/* skill:the end */
+/* --------------------------------------------------------------------------------------------------------------------- */
 /* animation keyframe */
 @keyframes floating {
     0% {
@@ -589,3 +631,23 @@ span .fa {
         transform: translate(0%, 0%) rotate(25deg);
     }
 }
+@keyframes  fadeInFromTop{
+    from{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to{
+        opacity: 1;
+     transform: translateY(0); }
+    
+}
+@keyframes load {
+    0%{
+       width: 0%;
+    }
+    55%{
+        width: 55%;
+    }
+
+}
+
