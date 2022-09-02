@@ -580,9 +580,7 @@ a.btn:focus{
 #skills{
     padding-bottom: 80px;
 }
-#progress-value{
-    animation:load 1s normal forwards; ;
-}
+
 
 
 /* skill:the end */
@@ -641,13 +639,5 @@ a.btn:focus{
      transform: translateY(0); }
     
 }
-@keyframes load {
-    0%{
-       width: 0%;
-    }
-    20%{
-        width: 55%;
-    }
 
-}
 
