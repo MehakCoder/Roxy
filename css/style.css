@@ -481,18 +481,11 @@ img {
 }
 
 .grid-portfolio {
-    overflow: hidden;
+    padding-left: 95px;
+    padding-right: 90px;
 }
-
-.gutter-sizer {
-    width: 2%;
-}
-
-.grid-sizer,
-.grid-item {
-    width: 32%;
-}
-
+.grid-item { width: 25%; }
+.grid-item--width2 { width: 50%; }
 .grid-item {
     margin-bottom: 20px;
     border-radius: 5px;
@@ -529,17 +522,9 @@ img {
     opacity: 0;
     transition: all .3s ease;
 }
-
-.lightcase-icon-close:before {
-    content: '\e870';
-    font-family: "Linearicons-Free";
-}
-
 .grid-title {
     text-align: center;
 }
-
-
 /* Portfolio */
 
 /* client-slider */

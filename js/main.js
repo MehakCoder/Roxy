@@ -47,6 +47,11 @@ $(".Portfolio-filters a").on('click', function () {
   });
 
 });
+var elem = document.querySelector('.grid-portfolio');
+var iso = new Isotope( elem, {
+  itemSelector: '.grid-item',
+  layoutMode: 'fitRows'
+});
 
 //5. client-holder
 $('.client-holder ').owlCarousel({
