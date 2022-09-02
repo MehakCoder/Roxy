@@ -114,9 +114,11 @@ img {
     border-color: #ff00cc;
     box-shadow: -5px 8px 20px 0px rgb(229 16 2 / 15%);
 }
-.form-control{
+
+.form-control {
     color: #f7f8f9 !important;
 }
+
 .form-control:focus {
     border-color: #ff00cc;
     box-shadow: 0 0 0 0.2rem rgb(253 101 90 / 25%);
@@ -646,6 +648,31 @@ a.btn:focus {
 }
 
 /* Blog : the end */
+/* Single blog */
+.section-content {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.jumbotron-blog {
+    background-image: url(../Image/blog-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.jumbotron-blog h1 {
+    font-size: 48px;
+    animation: 1s fadeInFromTop cubic-bezier(0.785, 0.135, 0.15, 0.86) 1s forwards;
+    animation-delay: .8s;
+}
+
+.blog-content img {
+    float: left;
+    margin: 15px 15px 15px 0;
+}
+
+/* Single blog : the end */
 /* --------------------------------------------------------------------------------------------------------------------- */
 /* animation keyframe */
 @keyframes floating {
