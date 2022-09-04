@@ -80,4 +80,3 @@ $(function () {
   AOS.init();
 
 });
-//7. progress bar
