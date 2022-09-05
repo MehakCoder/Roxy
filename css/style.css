@@ -7,6 +7,7 @@ body {
     font-weight: 300;
     width: 100%;
 }
+
 h1,
 h2,
 h3,
@@ -112,10 +113,6 @@ img {
     background-color: #ff00cc;
     border-color: #ff00cc;
     box-shadow: -5px 8px 20px 0px rgb(229 16 2 / 15%);
-}
-
-.form-control {
-    color: #f7f8f9 !important;
 }
 
 .form-control:focus {
@@ -621,7 +618,8 @@ a.btn:focus {
 .progress {
     transition: all 4s;
 }
-.progress-bar{
+
+.progress-bar {
     animation: load 3s normal forwards;
 }
 
@@ -753,7 +751,50 @@ a.btn:focus {
     }
 
 }
+
 @keyframes load {
-    0% { width: 0; }
-    90% { width: 55%; }
-  }
+    0% {
+        width: 0;
+    }
+
+    90% {
+        width: 55%;
+    }
+}
+
+/* animation : the end */
+/*==================================
+            RESPONSIVE            
+==================================*/
+@media (max-width: 992px) {
+    .not-on-top #header-navbar {
+        position: fixed;
+        top: 0;
+        height: auto;
+        width: 100%;
+        background: #ff00cc;
+    }
+
+        #header-navbar {
+            padding-top: 15px !important;
+            padding-bottom: 15px !important;
+        }
+
+        .navbar-transparent .navbar-collapse {
+            background: #ff00cc;
+        }
+
+        @media (max-width: 767px) {
+            .jumbotron h1 {
+                font-size: 6rem;
+            }
+
+            .grid-item {
+                width: 100%;
+            }
+
+            .progress {
+                height: 30px;
+                font-size: 16px;
+            }
+        }
