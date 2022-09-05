@@ -755,5 +755,5 @@ a.btn:focus {
 }
 @keyframes load {
     0% { width: 0; }
-    90% { width: 50%; }
+    90% { width: 55%; }
   }
