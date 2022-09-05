@@ -479,6 +479,7 @@ img {
     font-size: 20px;
     color: #000;
 }
+
 .grid-portfolio {
     overflow: hidden;
 }
@@ -502,9 +503,11 @@ img {
     top: 50%;
     opacity: 1;
 }
-.grid-item-wrapper{
+
+.grid-item-wrapper {
     margin-left: 16px;
 }
+
 .grid-item-wrapper:before {
     content: '';
     display: block;
@@ -597,6 +600,29 @@ a.btn:focus {
 #skills {
     padding-bottom: 80px;
 }
+
+.skill-item {
+    width: 100%;
+    position: relative;
+    padding: 10px 0;
+}
+
+.skill-item p {
+    font-size: 16px;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.skill-item .text-muted {
+    color: #939393;
+}
+
+.progress-bar,
+.progress {
+    transition: all 4s;
+}
+
 
 /* skill:the end */
 /* News */
